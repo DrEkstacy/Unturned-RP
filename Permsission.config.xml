@@ -1,203 +1,206 @@
-<?xml version="1.0" encoding="utf-8"?>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <RocketPermissions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <DefaultGroup>default</DefaultGroup>
-  <Groups>
-    <Group>
-      <Id>default</Id>
-      <DisplayName>[Civilian]</DisplayName>
-      <Prefix>[Civilian] </Prefix>
-      <Suffix />
-      <Color>grey</Color>
-      <Members />
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">kits</Permission>
-        <Permission Cooldown="3600">kit.starter</Permission>
-      </Permissions>
-    </Group>
-	<Group>
-	  <Id>Moderator</Id>
-      <DisplayName>[Moderator]</DisplayName>
-      <Prefix>[Moderator] </Prefix>
-	  <Suffix />
-	  <Color>grey</Color>
-	  <Members />
-	  <ParentGroup>default</ParentGroup>
-	  <Permissions>
-	    <Permission>duty.DModerator</Permission>
-	  </Permissions>
-	</Group>  
-    <Group>
-      <Id>DModerator</Id>
-      <DisplayName>[Moderator]</DisplayName>
-      <Prefix>[Moderator] </Prefix>
-      <Suffix />
-      <Color>yellow</Color>
-	  <Members />
-      <ParentGroup>default</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">vehicle</Permission>
-        <Permission Cooldown="0">v</Permission>
-        <Permission Cooldown="0">ban</Permission>
-        <Permission Cooldown="0">kick</Permission>
-        <Permission Cooldown="0">warn</Permission>
-        <Permission Cooldown="0">warns</Permission>
-        <Permission Cooldown="0">duty</Permission>
-        <Permission Cooldown="0">heal</Permission>
-        <Permission Cooldown="0">duty</Permission>
-      </Permissions>
-    </Group>
-	<Group>
-	  <Id>Admin</Id>
-      <DisplayName>[Admin]</DisplayName>
-      <Prefix>[Admin] </Prefix>
-	  <Suffix />
-	  <Color>grey</Color>
-	  <Members />
-	  <ParentGroup>default</ParentGroup>
-	  <Permissions>
-	    <Permission>duty.DAdmin</Permission>
-	  </Permissions>
-	</Group>  
-    <Group>
-      <Id>DAdmin</Id>
-      <DisplayName>[Admin]</DisplayName>
-      <Prefix>[Admin] </Prefix>
-      <Suffix />
-      <Color>cyan</Color>
-      <Member />
-      <ParentGroup>DModerator</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">i</Permission>
-        <Permission Cooldown="0">v</Permission>
-        <Permission Cooldown="0">vehicle</Permission>
-        <Permission Cooldown="0">item</Permission>
-        <Permission Cooldown="0">unban</Permission>
-        <Permission Cooldown="0">ban</Permission>
-        <Permission Cooldown="0">kick</Permission>
-        <Permission Cooldown="0">warn</Permission>
-        <Permission Cooldown="0">warns</Permission>
-        <Permission Cooldown="0">checkowner</Permission>
-        <Permission Cooldown="0">duty</Permission>
-      </Permissions>
-    </Group>
-	<Group>
-	  <Id>SAdmin</Id>
-      <DisplayName>[Senior Admin]</DisplayName>
-      <Prefix>[Senior Admin] </Prefix>
-	  <Suffix />
-	  <Color>grey</Color>
-	  <Members />
-	  <ParentGroup>default</ParentGroup>
-	  <Permissions>
-	    <Permission>duty.DSAdmin</Permission>
-	  </Permissions>
-	</Group>  
-    <Group>
-      <Id>DSAdmin</Id>
-      <DisplayName>[Senior Admin]</DisplayName>
-      <Prefix>[Senior Admin] </Prefix>
-      <Suffix />
-      <Color>cyan</Color>
-      <Member />
-      <ParentGroup>default</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">i</Permission>
-        <Permission Cooldown="0">v</Permission>
-        <Permission Cooldown="0">vehicle</Permission>
-        <Permission Cooldown="0">item</Permission>
-        <Permission Cooldown="0">unban</Permission>
-        <Permission Cooldown="0">ban</Permission>
-        <Permission Cooldown="0">kick</Permission>
-        <Permission Cooldown="0">warn</Permission>
-        <Permission Cooldown="0">warns</Permission>
-        <Permission Cooldown="0">checkowner</Permission>
-        <Permission Cooldown="0">duty</Permission>
-      </Permissions>
-	</Group>
-	<Group>
-	  <Id>CManager</Id>
-      <DisplayName>[Community Manager]</DisplayName>
-      <Prefix>[Community Manager] </Prefix>
-	  <Suffix />
-	  <Color>grey</Color>
-	  <Members />
-	  <ParentGroup>default</ParentGroup>
-	  <Permissions>
-	    <Permission>duty.DCManager</Permission>
-	  </Permissions>
-	</Group>  
-    <Group>
-      <Id>DCManager</Id>
-      <DisplayName>[Community Manager]</DisplayName>
-      <Prefix>[Community Manager] </Prefix>
-      <Suffix />
-      <Color>green</Color>
-      <Members />
-      <ParentGroup>DAdmin</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">i</Permission>
-        <Permission Cooldown="0">v</Permission>
-        <Permission Cooldown="0">vehicle</Permission>
-        <Permission Cooldown="0">item</Permission>
-        <Permission Cooldown="0">unban</Permission>
-        <Permission Cooldown="0">ban</Permission>
-        <Permission Cooldown="0">kick</Permission>
-        <Permission Cooldown="0">warn</Permission>
-        <Permission Cooldown="0">warns</Permission>
-        <Permission Cooldown="0">checkowner</Permission>
-        <Permission Cooldown="0">duty</Permission>
-      </Permissions>
-    </Group>
-    <Group>
-      <Id>SManager</Id>
-      <DisplayName>[Staff Manager] </DisplayName>
-      <Prefix>[Staff Manager] </Prefix>
-      <Suffix />
-      <Color>grey</Color>
-      <Members />
-      <ParentGroup>sadmin</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions>
-        <Permission Cooldown="0">duty.DSManager</Permission>
-      </Permissions>
-    </Group>
-	<Group>
-	  <Id>DSManager</Id>
-      <DisplayName>[Staff Manager]</DisplayName>
-      <Prefix>[Staff Manager] </Prefix>
-	  <Suffix />
-	  <Color>red</Color>
-	  <Members />
-	  <ParentGroup>default</ParentGroup>
-	  <Permissions>
-        <Permission Cooldown="0">i</Permission>
-        <Permission Cooldown="0">v</Permission>
-        <Permission Cooldown="0">vehicle</Permission>
-        <Permission Cooldown="0">item</Permission>
-        <Permission Cooldown="0">unban</Permission>
-        <Permission Cooldown="0">ban</Permission>
-        <Permission Cooldown="0">kick</Permission>
-        <Permission Cooldown="0">warn</Permission>
-        <Permission Cooldown="0">warns</Permission>
-        <Permission Cooldown="0">checkowner</Permission>
-        <Permission Cooldown="0">duty</Permission>
-	  </Permissions>
-	</Group>
-    <Group>
-      <Id>Founder</Id>
-      <DisplayName>[Founder]</DisplayName>
-      <Prefix>[Founder] </Prefix>
-      <Suffix />
-      <Color>red</Color>
-      <Members />
-      <ParentGroup>DSManager</ParentGroup>
-      <Priority>100</Priority>
-      <Permissions />
-    </Group>
-  </Groups>
+   <DefaultGroup>default</DefaultGroup>
+   <Groups>
+      <Group>
+         <Id>default</Id>
+         <DisplayName>[Civilian]</DisplayName>
+         <Prefix>[Civilian]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">kits</Permission>
+            <Permission Cooldown="3600">kit.starter</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>Moderator</Id>
+         <DisplayName>[Moderator]</DisplayName>
+         <Prefix>[Moderator]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Permissions>
+            <Permission>duty.DModerator</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>DModerator</Id>
+         <DisplayName>[Moderator]</DisplayName>
+         <Prefix>[Moderator]</Prefix>
+         <Suffix />
+         <Color>yellow</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">vehicle</Permission>
+            <Permission Cooldown="0">v</Permission>
+            <Permission Cooldown="0">ban</Permission>
+            <Permission Cooldown="0">kick</Permission>
+            <Permission Cooldown="0">warn</Permission>
+            <Permission Cooldown="0">warns</Permission>
+            <Permission Cooldown="0">duty</Permission>
+            <Permission Cooldown="0">heal</Permission>
+            <Permission Cooldown="0">duty</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>Admin</Id>
+         <DisplayName>[Admin]</DisplayName>
+         <Prefix>[Admin]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Permissions>
+            <Permission>duty.DAdmin</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>DAdmin</Id>
+         <DisplayName>[Admin]</DisplayName>
+         <Prefix>[Admin]</Prefix>
+         <Suffix />
+         <Color>cyan</Color>
+         <Member />
+         <ParentGroup>DModerator</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">i</Permission>
+            <Permission Cooldown="0">v</Permission>
+            <Permission Cooldown="0">vehicle</Permission>
+            <Permission Cooldown="0">item</Permission>
+            <Permission Cooldown="0">unban</Permission>
+            <Permission Cooldown="0">ban</Permission>
+            <Permission Cooldown="0">kick</Permission>
+            <Permission Cooldown="0">warn</Permission>
+            <Permission Cooldown="0">warns</Permission>
+            <Permission Cooldown="0">checkowner</Permission>
+            <Permission Cooldown="0">duty</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>SAdmin</Id>
+         <DisplayName>[Senior Admin]</DisplayName>
+         <Prefix>[Senior Admin]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Permissions>
+            <Permission>duty.DSAdmin</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>DSAdmin</Id>
+         <DisplayName>[Senior Admin]</DisplayName>
+         <Prefix>[Senior Admin]</Prefix>
+         <Suffix />
+         <Color>cyan</Color>
+         <Member />
+         <ParentGroup>default</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">i</Permission>
+            <Permission Cooldown="0">v</Permission>
+            <Permission Cooldown="0">vehicle</Permission>
+            <Permission Cooldown="0">item</Permission>
+            <Permission Cooldown="0">unban</Permission>
+            <Permission Cooldown="0">ban</Permission>
+            <Permission Cooldown="0">kick</Permission>
+            <Permission Cooldown="0">warn</Permission>
+            <Permission Cooldown="0">warns</Permission>
+            <Permission Cooldown="0">checkowner</Permission>
+            <Permission Cooldown="0">duty</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>CManager</Id>
+         <DisplayName>[Community Manager]</DisplayName>
+         <Prefix>[Community Manager]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Permissions>
+            <Permission>duty.DCManager</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>DCManager</Id>
+         <DisplayName>[Community Manager]</DisplayName>
+         <Prefix>[Community Manager]</Prefix>
+         <Suffix />
+         <Color>green</Color>
+         <Members />
+         <ParentGroup>DAdmin</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">i</Permission>
+            <Permission Cooldown="0">v</Permission>
+            <Permission Cooldown="0">vehicle</Permission>
+            <Permission Cooldown="0">item</Permission>
+            <Permission Cooldown="0">unban</Permission>
+            <Permission Cooldown="0">ban</Permission>
+            <Permission Cooldown="0">kick</Permission>
+            <Permission Cooldown="0">warn</Permission>
+            <Permission Cooldown="0">warns</Permission>
+            <Permission Cooldown="0">checkowner</Permission>
+            <Permission Cooldown="0">duty</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>SManager</Id>
+         <DisplayName>[Staff Manager]</DisplayName>
+         <Prefix>[Staff Manager]</Prefix>
+         <Suffix />
+         <Color>grey</Color>
+         <Members />
+         <ParentGroup>sadmin</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions>
+            <Permission Cooldown="0">duty.DSManager</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>DSManager</Id>
+         <DisplayName>[Staff Manager]</DisplayName>
+         <Prefix>[Staff Manager]</Prefix>
+         <Suffix />
+         <Color>red</Color>
+         <Members />
+         <ParentGroup>default</ParentGroup>
+         <Permissions>
+            <Permission Cooldown="0">i</Permission>
+            <Permission Cooldown="0">v</Permission>
+            <Permission Cooldown="0">vehicle</Permission>
+            <Permission Cooldown="0">item</Permission>
+            <Permission Cooldown="0">unban</Permission>
+            <Permission Cooldown="0">ban</Permission>
+            <Permission Cooldown="0">kick</Permission>
+            <Permission Cooldown="0">warn</Permission>
+            <Permission Cooldown="0">warns</Permission>
+            <Permission Cooldown="0">checkowner</Permission>
+            <Permission Cooldown="0">duty</Permission>
+         </Permissions>
+      </Group>
+      <Group>
+         <Id>Founder</Id>
+         <DisplayName>[Founder]</DisplayName>
+         <Prefix>[Founder]</Prefix>
+         <Suffix />
+         <Color>red</Color>
+         <Members />
+         <ParentGroup>DSManager</ParentGroup>
+         <Priority>100</Priority>
+         <Permissions />
+      </Group>
+   </Groups>
 </RocketPermissions>
+
